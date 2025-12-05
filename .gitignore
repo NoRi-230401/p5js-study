@@ -1,5 +1,6 @@
-# .pio
-# .vscode
+.vscode
 *.code-workspace
 BACKUP
+XX-template
 logs
+doc
