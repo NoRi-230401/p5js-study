@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "chrome",                // Edgeを使うなら "edge"
+      "type": "chrome", // Edgeを使うなら "edge"
       "request": "launch",
       "name": "Launch p5.js in Chrome",
       "url": "http://localhost:5500/index.html", // Live ServerのURL

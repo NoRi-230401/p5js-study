@@ -65,10 +65,10 @@ function draw() {
   // line
   push();
   stroke(random(255), random(255), random(255), toumei);
-  strokeWeight(2);
+  strokeWeight(4);
   const x1 = random(width);
   const y1 = random(height);
   rotate(random(360));
-  line(x1 - cSize, y1, x1 + cSize, y1);
+  line(x1 - cSize/2, y1, x1 + cSize/2, y1);
   pop();
 }
