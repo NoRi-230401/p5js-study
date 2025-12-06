@@ -1,13 +1,56 @@
+// {
+//   "version": "0.2.0",
+//   "configurations": [
+//     {
+//       "type": "chrome",                // Edgeを使うなら "edge"
+//       "request": "launch",
+//       "name": "Launch p5.js in Chrome",
+//       "url": "http://localhost:5500/index.html", // Live ServerのURL
+//       "webRoot": "${workspaceFolder}"
+//     }
+//   ]
+// }
+
 {
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "chrome",                // Edgeを使うなら "edge"
+      "name": "Launch localhost",
+      "type": "firefox",
       "request": "launch",
-      "name": "Launch p5.js in Chrome",
-      "url": "http://localhost:5500/index.html", // Live ServerのURL
-      "webRoot": "${workspaceFolder}"
+      "reAttach": true,
+      "url": "http://localhost:5500/index.html",
+      "webRoot": "${workspaceFolder}",
+      "pathMappings": [
+        {
+          "url": "http://localhost:5500/04-SinCosine",
+          "path": "${workspaceFolder}/05-Mandelbrot"
+        },
+        {
+          "url": "http://localhost:5500",
+          "path": "${workspaceFolder}"
+        },
+        {
+          "url": "http://localhost:5500/08-mosaic",
+          "path": "${workspaceFolder}/04-SinCosine"
+        },
+        {
+          "url": "http://localhost:5500/08-mosaic",
+          "path": "${workspaceFolder}/06-graphFunc"
+        },
+        {
+          "url": "http://localhost:5500/04-SinCosine",
+          "path": "${workspaceFolder}/08-mosaic"
+        },
+        {
+          "url": "http://localhost:5500/04-SinCosine",
+          "path": "${workspaceFolder}/02-aClock"
+        },
+        {
+          "url": "http://localhost:5500/06-graphFunc",
+          "path": "${workspaceFolder}/04-SinCosine"
+        }
+      ]
     }
   ]
 }
-
