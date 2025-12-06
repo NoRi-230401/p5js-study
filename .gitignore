@@ -1,6 +1,6 @@
-.vscode
-*.code-workspace
+# .vscode
+# *.code-workspace
+# logs
 BACKUP
 XX-template
-logs
 doc
