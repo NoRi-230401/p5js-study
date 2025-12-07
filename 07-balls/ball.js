@@ -2,12 +2,13 @@ class Ball {
   constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.dx = 2;
-    this.dy = 3;
+    this.dx = random(-2, 2);
+    this.dy = random(-3, 3);
+    this.col = color(random(255), random(255), random(255));
   }
 
   drawCircle() {
-    fill(255, 255, 0);
+    fill(this.col);
     ellipse(this.x, this.y, 30, 30);
   }
 
@@ -25,3 +26,4 @@ class Ball {
     }
   }
 }
+
