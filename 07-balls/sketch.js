@@ -3,9 +3,6 @@ let balls = [];
 
 function setup() {
   createCanvas(400, 400);
-  // for (let i = 0; i < 10; i++) {
-  //   balls[i] = new Ball(random(0, width), random(0, height));
-  // }
 }
 
 function draw() {
@@ -19,5 +16,5 @@ function draw() {
 }
 
 function mousePressed() {
-    balls.push(new Ball(mouseX,mouseY));
+  balls.push(new Ball(mouseX, mouseY));
 }
