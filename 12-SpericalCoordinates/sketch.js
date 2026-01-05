@@ -4,7 +4,7 @@ let radius, thetaMax, phiMax, density;
 
 function setup() {
   // createCanvas(600, 600, WEBGL);
-  createCanvas(windowWidth, min(windowWidth, windowHeight), WEBGL);
+  createCanvas(min(windowWidth, windowHeight), min(windowWidth, windowHeight), WEBGL);
   angleMode(DEGREES);
   noFill();
 
