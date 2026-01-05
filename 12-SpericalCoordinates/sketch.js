@@ -1,6 +1,6 @@
 let r;
-let radiusSlider,thetaMaxSlider, phiMaxSlider,densitySlider;
-let radius,thetaMax, phiMax, density;
+let radiusSlider, thetaMaxSlider, phiMaxSlider, densitySlider;
+let radius, thetaMax, phiMax, density;
 
 function setup() {
   createCanvas(500, 500, WEBGL);
@@ -49,9 +49,17 @@ function draw() {
 
   stroke("skyblue");
   strokeWeight(3);
-  for (let phi = 0; phi < phiMaxSlider.value(); phi += 360 / densitySlider.value()) {
+  for (
+    let phi = 0;
+    phi < phiMaxSlider.value();
+    phi += 360 / densitySlider.value()
+  ) {
     beginShape(POINTS);
-    for (let theta = 0;theta < thetaMaxSlider.value(); theta += 360 / densitySlider.value()) {
+    for (
+      let theta = 0;
+      theta < thetaMaxSlider.value();
+      theta += 360 / densitySlider.value()
+    ) {
       let y = -r * cos(phi);
       let x = r * sin(phi) * sin(theta);
       let z = r * sin(phi) * cos(theta);
