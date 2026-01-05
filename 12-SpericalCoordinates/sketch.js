@@ -3,7 +3,8 @@ let radiusSlider, thetaMaxSlider, phiMaxSlider, densitySlider;
 let radius, thetaMax, phiMax, density;
 
 function setup() {
-  createCanvas(600, 600, WEBGL);
+  // createCanvas(600, 600, WEBGL);
+  createCanvas(windowWidth, min(windowWidth, windowHeight), WEBGL);
   angleMode(DEGREES);
   noFill();
 
