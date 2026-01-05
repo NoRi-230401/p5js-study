@@ -3,14 +3,14 @@ let radiusSlider, thetaMaxSlider, phiMaxSlider, densitySlider;
 let radius, thetaMax, phiMax, density;
 
 function setup() {
-  createCanvas(500, 500, WEBGL);
+  createCanvas(600, 600, WEBGL);
   angleMode(DEGREES);
   noFill();
 
   //Create slider!
   radius = createDiv();
   radius.class("valueDisplay");
-  radiusSlider = createSlider(0, width / 2.5, width / 3, 1);
+  radiusSlider = createSlider(1, width / 2.5, width / 3, 1);
   radiusSlider.class("Slider");
 
   phiMax = createDiv();
@@ -35,14 +35,13 @@ function draw() {
 
   strokeWeight(1);
   stroke("yellow");
+  r = radiusSlider.value();
   debugMode(r * 2, 8, 0, 0, 0, r / 5, 0, -r, 0);
 
   push();
+  // -------------------------------------------
   rotateZ(23.4);
   rotateY(frameCount * 0.25);
-
-  r = radiusSlider.value();
-
   strokeWeight(1);
   stroke("orange");
   line(0, r * 1.2, 0, 0, -r * 1.2, 0); // y-axis
@@ -67,7 +66,7 @@ function draw() {
     }
     endShape(CLOSE);
   }
-
+  // -------------------------------------------
   pop();
 
   radius.html("radius: " + radiusSlider.value());
