@@ -37,7 +37,7 @@ function draw() {
   strokeWeight(1);
   stroke("yellow");
   r = radiusSlider.value();
-  debugMode(r * 2, 8, 0, 0, 0, r / 5, 0, -r, 0);
+  debugMode(r * 2, 8, 0, 0, 0, r / 3, 0, -r, 0);
 
   push();
   // -------------------------------------------
