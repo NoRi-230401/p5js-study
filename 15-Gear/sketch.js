@@ -1,6 +1,6 @@
 const w = 500;
 const h = 700;
-const frate = 60;
+const frate = 20;
 const nGear = 30;
 const bGear = 1.12;
 let rGear;
@@ -17,7 +17,7 @@ function setup() {
 
 function draw() {
   background(0);
-  let radRotate = (TWO_PI / 30) * (frameCount / frate );
+  let radRotate = (TWO_PI / 10) * (frameCount / frate );
 
   // Red
   push();
